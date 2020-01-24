@@ -23,11 +23,20 @@ From: quay.io/fenicsproject/stable:current
 #
 #####################
 
+# %post
+#    pip3 install git+https://github.com/blechta/tsfc.git@2018.1.0
+#    pip3 install git+https://github.com/blechta/COFFEE.git@2018.1.0
+#    pip3 install git+https://github.com/blechta/FInAT.git@2018.1.0
+#    pip3 install singledispatch networkx pulp
+#    pip3 install git+https://github.com/david-kamensky/tIGAr.git
+#    pip3 install https://bitbucket.org/dalcinl/igakit/get/master.tar.gz
+#    pip3 install --force-reinstall scipy
+
 %post
     pip3 install git+https://github.com/blechta/tsfc.git@2018.1.0
     pip3 install git+https://github.com/blechta/COFFEE.git@2018.1.0
     pip3 install git+https://github.com/blechta/FInAT.git@2018.1.0
     pip3 install singledispatch networkx pulp
-    pip3 install git+https://github.com/david-kamensky/tIGAr.git
+    pip3 install git+https://github.com/Bo-Ni/tIGAr-PF-Clean.git
     pip3 install https://bitbucket.org/dalcinl/igakit/get/master.tar.gz
     pip3 install --force-reinstall scipy
